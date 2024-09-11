@@ -1,0 +1,45 @@
+name: login
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: null
+  flutter_otp_text_field: ^1.2.0
+  get: null
+  google_fonts: ^6.2.1
+  liquid_swipe: ^3.1.0
+  smooth_page_indicator: ^1.2.0+3
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_native_splash:
+  color: "#f7f6f1"
+  color_dark: "#272727"
+  image: assets/images/barcelona2.png
+  image_dark: assets/images/barcelona2.png
+  branding: assets/images/barcelona2.png
+  branding_dark: assets/images/barcelona2.png
+
+  android_12:
+    image: assets/images/barcelona2.png
+    icon_background_color: "#f7f6f1"
+    image_dark: assets/images/barcelona2.png
+    icon_background_color_dark: "#272727"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/on_boarding_images/
+    - assets/images/welcome_images/
+    - assets/images/logo/
+    - assets/images/forget_password/
