@@ -89,7 +89,9 @@ class AppTheme {
     bodyLarge: GoogleFonts.raleway( 
       // color: colorList[ selectedColor ] 
       ),
-    bodyMedium: GoogleFonts.raleway()
+    bodyMedium: GoogleFonts.raleway(),
+
+    bodySmall: GoogleFonts.raleway(),
     
     );
   }

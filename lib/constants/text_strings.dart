@@ -76,3 +76,14 @@ const String forgetMailSubTitle = 'Enter hyour registerd E-Mail to recieve OTP';
 const String otpTitle = 'CO\nDE';
 const String otpSubTitle = 'Verification';
 const String otpMessage = 'Enter the verification code sent at ';
+
+// Dashboard Screen - Text
+
+const String dashboardTitle = 'Hey, Coding with T';
+const String dashboardHeading = 'Explore Courses';
+const String dashboardSearch = 'Search...';
+const String dashboardBannerTitle1 = 'Android for Beginners';
+const String dashboardBannerTitle2 = 'JAVA';
+const String dashboardBannerSubTitle = '10 Lessons';
+const String dashboardButton = 'View All';
+const String dashboardTopCourses = 'Top Courses';
