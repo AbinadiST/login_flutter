@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:login/constants/sizes.dart';
 import 'package:login/constants/text_strings.dart';
 import 'package:login/features/authentication/screens/forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
-import 'package:login/features/core/screens/dashboard/dashboard.dart';
+import 'package:login/features/core/screens/dashboard/dashboard_screen.dart';
 
 
 class LoginForm extends StatelessWidget {
