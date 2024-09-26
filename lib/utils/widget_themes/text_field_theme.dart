@@ -5,7 +5,7 @@ import 'package:login/constants/colors.dart';
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
 
-  // Light Theme
+  // Light Theme ----------------------------------------------
 
   static InputDecorationTheme lightInputDecorationTheme = 
     const InputDecorationTheme(
@@ -17,7 +17,7 @@ class TTextFormFieldTheme {
     ),
   );
 
-  // Dark Theme
+  // Dark Theme -------------------------------------------------
 
   static InputDecorationTheme darkInputDecorationTheme = 
     const InputDecorationTheme(

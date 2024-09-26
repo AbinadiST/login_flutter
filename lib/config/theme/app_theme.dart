@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:login/config/theme/elevated_button_theme.dart';
-import 'package:login/config/theme/outlined_button_theme.dart';
+import 'package:login/config/theme/widgets_themes/elevated_button_theme.dart';
+import 'package:login/config/theme/widgets_themes/outlined_button_theme.dart';
+import 'package:login/config/theme/widgets_themes/text_theme.dart';
 import 'package:login/utils/widget_themes/text_field_theme.dart';
 
 const colorList = <Color> [
@@ -29,7 +29,7 @@ class AppTheme {
     
     useMaterial3: true,
     // colorSchemeSeed: colorList [ selectedColor ],
-    textTheme: _customTextTheme(),
+    textTheme: TTextTheme.lightTextTheme,
     elevatedButtonTheme: ElevatedButtonCustomTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: OutlinedButtonCustomTheme.lightOutlinedButtonTheme, //! Se exportó de la clase
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme, //* diseño FORM para SING UP
@@ -38,10 +38,12 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       centerTitle: false,
       // backgroundColor: colorList[ selectedColor ],
+
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData( 
       // backgroundColor: colorList [ selectedColor ] 
+
     ),
   );
 
@@ -53,7 +55,7 @@ class AppTheme {
     useMaterial3: true,
     brightness: Brightness.dark,
     // colorSchemeSeed: colorList [ selectedColor ],
-    textTheme: _customTextTheme(),
+    textTheme: TTextTheme.darkTextTheme,
     elevatedButtonTheme: ElevatedButtonCustomTheme.darkEleveatedButtonTheme,
     outlinedButtonTheme: OutlinedButtonCustomTheme.darkOutlinedButtonTheme,  //! Se exportó de la clase
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme, //* Diseño FORM para DARK
@@ -62,38 +64,13 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       centerTitle: false,
       // backgroundColor: colorList[ selectedColor ],
+
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData( 
       // backgroundColor: colorList [ selectedColor ] 
+
     ),
   );
-
-  
-// CUSTOM TEXT THEME -----------------------------------------------------
-
-  TextTheme _customTextTheme() {
-
-    return TextTheme(
-      
-    headlineLarge: GoogleFonts.raleway( 
-      // color: colorList[ selectedColor ] 
-      // fontSize: 20 //* se coloca tamaño entre otras cosas
-      ), 
-    headlineMedium: GoogleFonts.raleway( 
-      // color: colorList[ selectedColor ] 
-      ),
-    headlineSmall: GoogleFonts.raleway( 
-      // color: colorList[ selectedColor ] 
-      ),
-    bodyLarge: GoogleFonts.raleway( 
-      // color: colorList[ selectedColor ] 
-      ),
-    bodyMedium: GoogleFonts.raleway(),
-
-    bodySmall: GoogleFonts.raleway(),
-    
-    );
-  }
 
 }
