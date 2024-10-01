@@ -5,7 +5,7 @@ import 'package:login/features/authentication/screens/splash_screen/splash_scree
 // import 'package:flutter_native_splash/flutter_native_splash.dart'; //* paquete de SPLASH
 
 void main() {
-
+  //! Sigue # 8
   // En consola: dart run flutter_native_splash:create
   // En consola: dart run flutter_native_splash:remove
   // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized(); //* Inicializar SPLASH
@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return GetMaterialApp(
+    return GetMaterialApp( //* GETMATERIALAPP indica está implementado el GETX
 
       debugShowCheckedModeBanner: false,
       theme: AppTheme().getTheme(), 

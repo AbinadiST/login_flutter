@@ -9,7 +9,7 @@ class ElevatedButtonCustomTheme {
 
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      elevation: 0,  //* sombra del boton 
+      elevation: 0,  //* sombra del boton al darl clic,
       shape: const RoundedRectangleBorder( borderRadius: BorderRadius.all(Radius.circular(5))),
       foregroundColor: whiteColor,
       backgroundColor: secondaryColor,
@@ -23,7 +23,7 @@ class ElevatedButtonCustomTheme {
     
   static final darkEleveatedButtonTheme = ElevatedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      elevation: 0,  //* sombra del boton 
+      elevation: 0,  //* sombra del boton al dar clic
       shape: const RoundedRectangleBorder( borderRadius: BorderRadius.all(Radius.circular(5))),
       foregroundColor: secondaryColor,
       backgroundColor: whiteColor,

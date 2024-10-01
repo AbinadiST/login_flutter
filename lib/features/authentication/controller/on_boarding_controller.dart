@@ -16,6 +16,8 @@ class OnBoardingController extends GetxController{
   
   final pages = [
 
+    // Paginas de LIQUIDSWIPE que solicita en ONBOARDING SCREEN ------------------------------
+
       OnBoardingPageWidget(
         model: OnBoardingModel(
 

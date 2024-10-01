@@ -19,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
     final isDarkMode = brightness == Brightness.dark;
 
     return Scaffold(
-      backgroundColor: isDarkMode ? secondaryColor : primaryColor,
+      backgroundColor: isDarkMode ? secondaryColor : primaryColor, //* en modo LIGHT conserva color amarillo, de lo contrario es DARK
       body: Container(
         padding: const EdgeInsets.all( defaultSize), 
         child: Column(

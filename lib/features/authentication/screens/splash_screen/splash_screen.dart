@@ -18,14 +18,16 @@ class SplashScreen extends StatelessWidget {
     splashController.startAnimation(); //* Se usa el controlador 
 
     return Scaffold(
-      body: Stack(
+      body: Stack(  //* Permite posicionar un diseño sobre otro
         children: [
-          // Image top | balon de barcelona --------------------------------  
-          Obx( () => AnimatedPositioned(  //* esta OBSERVANDO la funcion ANIMATE
+
+          // Image top | balon de barcelona -------------------------------------
+          Obx( () => AnimatedPositioned(  //* esta OBSERVANDO la funcion ANIMATE | imagen se mueve en cierto un tiempo
               duration: const Duration(milliseconds: 1600),
               top: splashController.animate.value ? 0 : -30,
               left: splashController.animate.value ? 0 : -30,
-              child: AnimatedOpacity(
+
+              child: AnimatedOpacity( //* Imagen aparece después de un tiempo
                 duration: const Duration( milliseconds: 1600 ),
                 opacity: splashController.animate.value ? 1 : 0,  //* Desaparece imagen lentamente
                 child: const Image(
@@ -35,6 +37,7 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
 
+          // TEXTO -----------------------------------------------------------------
           Obx( () => AnimatedPositioned(
               duration: const Duration( milliseconds: 1600),
               top: 80,
@@ -59,6 +62,7 @@ class SplashScreen extends StatelessWidget {
               ),
           ),
 
+          // Barcelona Team -----------------------------------------------------------------
           Obx( () => AnimatedPositioned(
               duration: const Duration(milliseconds: 2400),
               bottom: splashController.animate.value ? 100 : 0,
@@ -71,7 +75,7 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
 
-          // circulo amarillo ------------------------------------------------
+          // circulo amarillo -----------------------------------------------------------------
           Obx( () => AnimatedPositioned(
               duration: const Duration( milliseconds: 2400),
               bottom: splashController.animate.value ? 60 : 0,

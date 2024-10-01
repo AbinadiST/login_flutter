@@ -3,7 +3,7 @@ import 'package:login/constants/sizes.dart';
 import 'package:login/features/authentication/models/model_on_boarding.dart';
 
 
-//* Diseño de la app 
+// Diseño del LIQUID SWIPE ------------------------------------------------------------
 
 
 class OnBoardingPageWidget extends StatelessWidget {

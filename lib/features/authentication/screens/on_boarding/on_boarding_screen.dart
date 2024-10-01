@@ -20,7 +20,7 @@ class OnBoardingScreen extends StatelessWidget {
         alignment: Alignment.center, // Centra el circulo negro con flecha 
         children: [
           LiquidSwipe(
-            pages: obController.pages, //* aquí era lista de PAGES pero creamos arriba evitar mucho código aquí adentro
+            pages: obController.pages, //* aquí requiere lista de WIDGES que hemos llamado PAGES
             enableSideReveal: true, //* Muestra el color de fondo de la siguiente página
             liquidController: obController.controller, 
             onPageChangeCallback: obController.onPageChangedCallback,
