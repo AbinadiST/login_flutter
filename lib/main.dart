@@ -1,11 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';  //* lo importó al agregar GETMATERIALAPP 
 import 'package:login/config/theme/app_theme.dart';
 import 'package:login/features/authentication/screens/splash_screen/splash_screen.dart';
+import 'package:login/firebase_options.dart';
+import 'package:login/repository/authentication_repository/authentication_repository.dart';
 // import 'package:flutter_native_splash/flutter_native_splash.dart'; //* paquete de SPLASH
 
 void main() {
-  //! Sigue # 8
+
+  //INICIALIZAMOS FIREBASE
+
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform )
+    .then((value) => Get.put( AuthenticationRepository() ) );
+
+  //! Sigue # 15 min 12:10 | ver video 15, se usa controlador 
   // En consola: dart run flutter_native_splash:create
   // En consola: dart run flutter_native_splash:remove
   // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized(); //* Inicializar SPLASH

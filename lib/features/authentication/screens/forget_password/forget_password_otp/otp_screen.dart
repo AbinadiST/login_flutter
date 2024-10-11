@@ -26,7 +26,7 @@ class OTPScreen extends StatelessWidget {
             
             const SizedBox( height: 40.0 ),
 
-            Text( '${otpMessage}support@codingwitht.com', 
+            Text( '${otpMessage}support@codingwitht.com', //* otro ej. '$otpMessage support@codingwitht.com'
             style: Theme.of(context).textTheme.bodyMedium, 
             textAlign: TextAlign.center, ),
 
@@ -37,6 +37,7 @@ class OTPScreen extends StatelessWidget {
               fillColor: Colors.black.withOpacity(0.1),
               filled: true,
               onSubmit: ( code ) { print('OTP is => $code '); },
+              //* keyboardType: TextInputType.number | Podemos agregarlo para el teclado 
             ),
 
             const SizedBox( height: 20 ),

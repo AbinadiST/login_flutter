@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login/config/theme/widgets_themes/elevated_button_theme.dart';
 import 'package:login/config/theme/widgets_themes/outlined_button_theme.dart';
 import 'package:login/config/theme/widgets_themes/text_theme.dart';
-import 'package:login/utils/widget_themes/text_field_theme.dart';
+import 'package:login/config/theme/widgets_themes/text_field_theme.dart';
 
 const colorList = <Color> [
 
