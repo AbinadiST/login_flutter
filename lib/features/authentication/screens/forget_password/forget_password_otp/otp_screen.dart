@@ -3,6 +3,7 @@ import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login/constants/sizes.dart';
 import 'package:login/constants/text_strings.dart';
+import 'package:login/features/authentication/controller/otp_controller.dart';
 
 
 
@@ -11,6 +12,7 @@ class OTPScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var otp;
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all( defaultSize ),
@@ -36,7 +38,10 @@ class OTPScreen extends StatelessWidget {
               numberOfFields: 6,
               fillColor: Colors.black.withOpacity(0.1),
               filled: true,
-              onSubmit: ( code ) { print('OTP is => $code '); },
+              onSubmit: ( code ) { 
+                otp = code;
+                OTPController.instance.verifyOTP(otp);
+               },
               //* keyboardType: TextInputType.number | Podemos agregarlo para el teclado 
             ),
 
@@ -45,7 +50,7 @@ class OTPScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(onPressed: () {
-                
+                OTPController.instance.verifyOTP(otp);
                 }, 
                 child: Text( next.toUpperCase() )
               ),

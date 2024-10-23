@@ -16,7 +16,7 @@ void main() {
   Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform )
     .then((value) => Get.put( AuthenticationRepository() ) );
 
-  //! Sigue # 15 min 12:10 | ver video 15, se usa controlador 
+  //! Sigue # 17 | ver video 15, se usa controlador y muestra como hacer login
   // En consola: dart run flutter_native_splash:create
   // En consola: dart run flutter_native_splash:remove
   // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized(); //* Inicializar SPLASH
